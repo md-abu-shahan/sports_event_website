@@ -1,0 +1,180 @@
+*{
+	margin: 0 ;
+	padding: 0;
+}
+.wrapper{
+	height: auto;
+}
+.header_area{
+	width: 100%;
+	background: linear-gradient(90deg, rgba(0,17,36,1) 0%, rgba(40,162,103,1) 0%, rgba(0,191,255,1) 100%);
+	height: auto;
+	min-width: 330px;
+	border: 0px solid white;
+
+}
+.logo{	
+	width: 24%;
+	display: inline-block;
+	background-color: linear-gradient(90deg, rgba(0,17,36,1) 0%, rgba(40,162,103,1) 0%, rgba(0,191,255,1) 100%);
+}
+.logo img{
+	margin: 5px;
+	width: 180px;
+	height: 65px;
+	border-radius:  40px;
+}
+.subheader{
+  	top: 0;
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: #00b3b3;
+	min-width: 330px;
+
+}
+.myInput {
+  background-image: url("img/searchicon.png");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+.subheader ul li{
+	display: inline-block;
+	margin: 5px;
+}
+.subheader ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	text-align: center;
+}
+.subheader ul li a:hover{
+	background-color:#00e6e6;
+	color: black;
+}
+.active
+{
+	background-color:#008080;
+}
+.footer{
+	width: 100%; 
+	height: 150px;
+	float: left;
+	background-color: #004d99; 
+	text-align: center;
+	color: white;
+	font-size: 14px; 
+	padding-top: 40px; 
+	min-width: 330px;
+
+}
+.footer div{
+	border: 1px solid #00b3b3;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 2px;
+}
+/* Event */
+.eventtable{
+	background-color: #ccffff;
+	border: 0px solid gray;
+	text-align: center;
+	height: auto;
+	width: 100%; 
+	min-width: 330px;
+	min-height: 800px;
+}
+.eventfilter{
+	width: 100%;
+	height: auto;
+	min-width: 330px;
+	background-color: #e6ffff;
+	text-align: center;
+}
+.eventfilter form{
+	text-align: center;
+	margin-bottom: 5px; 
+	min-width: 330px;
+}
+.eventfilter input{
+	padding: 10px;
+	width: 200px;
+}
+.eventfilter textarea{
+	padding: 10px;
+	width: 200px;
+}
+.eventfilter input[type="submit"]{
+	border :none;
+	background:red;
+	color:white;
+	border-radius:20px;
+}
+.eventfilter input[type="submit"]:hover{
+	background:green;
+	color:white;
+	cursor:pointer;
+}
+/* table */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:5px;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 500px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #00b3b3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: green;
+}
+.delete_button:hover{
+	cursor:pointer ;
+	background-color:red;
+	color:white;
+}

@@ -1,0 +1,127 @@
+html, body {
+	  height: 100%;
+	  margin: 0;
+}
+
+.full-height {
+	 height: 100%;
+}
+
+/* welcome page start */
+.header_side{
+	background-image:url("img/photo-1452626038306-9aae5e071dd3.jpg");
+	padding-top:1%;
+	padding-bottom:1%;
+	width:100%;
+	height:auto;
+	min-width:260px;
+}
+header {
+	text-align: center;
+	font-size:30px;
+	color: white;
+	text-shadow: 3px 2px red;
+}
+
+.middle{
+	width:100%; 
+	height:auto;
+		background-image:url("img/photo-1519209233471-a93512eebb72.jpg");
+	min-width:250px;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+
+.loginBox{
+	width:20%;
+	height:auto;
+	background:black;
+	color:white;
+	padding:2%;
+	min-width:250px;
+	min-height:200px;
+	margin: 0 auto;
+	display:block;
+}
+
+.loginBox p{
+	margin:0;
+	padding:0;
+	front-weight: bold;
+}
+
+.loginBox input{
+	width: 90%;
+	margin-bottom: 10px; 
+}
+
+.loginBox input[type="text"], input[type="password"]{
+	border:none;
+	border-bottom:1px solid white;
+	background:transparent;
+	color:white;
+	font-size:16px;
+}
+
+.loginBox input[type="submit"]{
+	border :none;
+	height: 40px;
+	background:red;
+	color:white;
+	font-size: 18px;
+	border-radius:20px;
+	float:left;
+}
+
+.loginBox input[type="submit"]:hover{
+	background:green;
+	color:white;
+	cursor:pointer;
+} 
+
+.loginBox a{
+	font-size:12px;
+	color:grey;
+}
+
+
+
+img.circle {
+	  width: 15%;
+	  border-radius: 50%;
+	  margin: 0 auto;
+	  display: block;
+	  
+}
+
+a:link, a:visited {
+	background-color: black;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footer{
+	padding-top:5px;
+	width:100%;
+	height:auto;
+	background:#252847;
+	min-height:130px;
+	min-width:260px;
+}
+.footer_right{
+	width:30%;
+	height:auto;
+	float:right;
+}
+.footer_right img{
+	width:50px;
+	height:50px;
+	float:right;
+	margin-right:10%;
+	margin-top:2%;
+}
+.footer_left{
+	width:20%;
+	height:100%;
+}
