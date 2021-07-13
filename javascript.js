@@ -44,14 +44,3 @@ function search() {
 		}       
 	}
 }
-
-function checkFunction(id) {
-	var x = document.getElementById(id).style.backgroundColor;
-	if(x=="yellow"){
-		document.getElementById(id).style.backgroundColor = "#CCFFFF";
-	}else{
-		document.getElementById(id).style.backgroundColor = "yellow";
-	}
-	
-		
-}

@@ -118,19 +118,38 @@
 								$image = $row['Image'];
 								$category = $row['Category'];
 								$status = $row['Status'];
-
-								echo '<tr id='.$id1.'>';
+								$featured = $row['Featured'];
+								if($featured=="YES"){
+									$color="yellow";
+								}else{
+									$color="#CCFFFF";
+								}
+								echo '<tr id='.$id1.' style="background:'.$color.';">';
 									echo'<td>'.$name.'</td>';
 									echo'<td>'.$description.'</td>';
 									echo'<td>'.$date.'</td>';
 									echo'<td>'.$category.'</td>';
 									echo'<td> <img src="../img/'.$image.'" alt="" width=300 height=250></td>';
 									echo'<td>'.$status.'</td>';
-					?>				<td>
-											<input type="checkbox" name="check" value="checked" onclick="checkFunction(<?php echo $id1; ?>)">
-												
-									</td>
+									if($featured=="YES"){
+					?>					<td>
+											<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
+												<input type="hidden" name="check1" value ="<?php echo $id1 ?>" id="p">
+												<input type="submit" name="check" value="Unark">
+											</form>		
+										</td>
 					<?php			
+									}else{
+										
+					?>					<td>
+											<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
+												<input type="hidden" name="check1" value ="<?php echo $id1 ?>" id="p">
+												<input type="submit" name="check" value="Mark">
+											</form>		
+										</td>
+					<?php			
+										
+									}
 										$row_num += 1;
 										echo '<td><a href="edit_events.php?id='.$id1.'">Edit</td>';
 					?>
@@ -164,6 +183,25 @@
 							window.location.reload();
 							</script>';
 	                    }
+						if(isset($_POST['check'])){
+							$check = $_POST['check1'];
+							$find_ft = "select * from event_details WHERE Id = '{$check}';";
+							$res_up3 = mysqli_query($conn, $find_ft);
+							$row1 = mysqli_fetch_assoc($res_up3);
+							$prev_ft = $row1['Featured'];
+							if($prev_ft=="YES"){
+								$find_check = "Update event_details SET Featured = 'No' WHERE Id = '{$check}';";
+							} else {
+								$find_check = "Update event_details SET Featured = 'YES' WHERE Id = '{$check}';";
+							}
+							mysqli_query($conn, $find_check);
+							echo '<script>
+							if (window.history.replaceState) {
+								window.history.replaceState(null, null, window.location.href);
+							}
+							window.location.reload();
+							</script>';
+						}
 					?>
 				</table>
 			</nav>
