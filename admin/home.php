@@ -135,7 +135,7 @@
 					?>					<td>
 											<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
 												<input type="hidden" name="check1" value ="<?php echo $id1 ?>" id="p">
-												<input type="submit" name="check" value="Unark">
+												<input type="submit" name="check" value="Unark" class="delete_button">
 											</form>		
 										</td>
 					<?php			
@@ -144,7 +144,7 @@
 					?>					<td>
 											<form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
 												<input type="hidden" name="check1" value ="<?php echo $id1 ?>" id="p">
-												<input type="submit" name="check" value="Mark">
+												<input type="submit" name="check" value="Mark" class="mark_button">
 											</form>		
 										</td>
 					<?php			

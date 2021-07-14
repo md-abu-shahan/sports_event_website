@@ -26,10 +26,12 @@ header {
 .middle{
 	width:100%; 
 	height:auto;
-		background-image:url("img/photo-1519209233471-a93512eebb72.jpg");
+	background-image:url("img/photo-1519209233471-a93512eebb72.jpg");
 	min-width:250px;
 	padding-bottom:5px;
 	padding-top:5px;
+
+	background-attachment:fixed;
 }
 
 .loginBox{
